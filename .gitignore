@@ -1,2 +1,4 @@
 config.json
 pool_configs/*
+node_modules/
+package-lock.json

@@ -11,11 +11,16 @@ var express = require('express');
 var bodyParser = require('body-parser');
 var compress = require('compression');
 
+const memwatch = require('memwatch-next');
+
 var Stratum = require('stratum-pool');
 var util = require('stratum-pool/lib/util.js');
 
 var api = require('./api.js');
 
+memwatch.on('leak', (info) => {
+        console.error('\u0007' + 'Memory leak detected:\n', info);
+});
 
 module.exports = function(logger){
 

@@ -1,6 +1,6 @@
 <style>
     #boxWelcome{
-        background-color: #989898;
+        background-color: #0eafc7;
         color: white;
         margin: 18px;
     }
@@ -41,10 +41,10 @@
 
 
     #boxStatsLeft{
-        background-color: #272d63;
+        background-color: #b064e1;
     }
     #boxStatsRight{
-        background-color: #272d63;
+        background-color: #10bb9c;
     }
     .boxStats{
         color: white;
@@ -79,7 +79,7 @@
         <img id="logoImg" src="/static/logo.svg">
     </div>
     <div class="pure-u-2-3">
-        <div id="welcomeText">Official Bitcoin Private mining pool</div>
+        <div id="welcomeText">Welcome to the Official Bitcoin Private Mining Pool</div>
         <ul id="welcomeItems">
             <li>0% Introductory fee for 2 weeks(from 3/3/2018)</li>
             <li>After 2 weeks there is a 1.5% fee for Bitcoin Private Development Fund</li>

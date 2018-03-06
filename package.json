@@ -51,7 +51,7 @@
         "redis": "2.7.1",
         "request": "2.81.0",
         "on-finished": "2.3.0",
-        "stratum-pool": "git+https://github.com/z-classic/node-stratum-pool.git"
+        "stratum-pool": "git+https://github.com/BTCP-community/node-stratum-pool.git"
     },
     "engines": {
         "node": ">=0.10"

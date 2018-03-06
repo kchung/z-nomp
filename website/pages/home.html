@@ -125,6 +125,7 @@
 
 <script>
     $(function() {
+        window.statsSource = new EventSource("/api/live_stats");
         statsSource.addEventListener('message', function (e) {
             var stats = JSON.parse(e.data);
             for (algo in stats.algos) {

@@ -318,7 +318,6 @@ legend.append('text')
 
 
 <script>
-	window.statsSource = new EventSource("/api/live_stats");
     $(function() {
         statsSource.addEventListener('message', function (e) {
             var stats = JSON.parse(e.data);

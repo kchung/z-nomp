@@ -464,7 +464,7 @@ var web_worker;
 setInterval(function(){
         console.log("Time to re-spawn website worker, killing worker, PID:"+web_worker.process.pid);
         web_worker.kill();
-}, 60000);
+}, 150000);
 
 
 
@@ -484,7 +484,7 @@ var startWebsite = function(){
         logger.error('Master', 'Website', 'Website process died, spawning replacement...');
         setTimeout(function(){
             startWebsite(portalConfig, poolConfigs);
-        }, 8000);
+        }, 2000);
     });
 };
 
@@ -501,6 +501,7 @@ var startProfitSwitch = function(){
         pools: JSON.stringify(poolConfigs),
         portalConfig: JSON.stringify(portalConfig)
     });
+web_worker = worker;
     worker.on('exit', function(code, signal){
         logger.error('Master', 'Profit', 'Profit switching process died, spawning replacement...');
         setTimeout(function(){
